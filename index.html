@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESPONSIVE-PORTFOLIO</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Anta?query=anta"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/2606e33619.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div class="lefr">
+            <h1><span>P</span>ortfolio</h1>
+          </div>
+          <div id="ledt">
+            <h4><a href="#header">Home</a></h4>
+            <h4><a href="#about">About</a></h4>
+            <h4><a href="#certificates">Certification</a></h4>
+            <h4><a href="#contact">Contact</a></h4>
+            <i class="fa-solid fa-x"onclick="closemenu()"></i>
+          </div>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header_text">
+          <p>WEB DEVELOPER</p>
+          <h1>Hi, I'm <span>Yashavantha.P</span></h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------about------------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col1">
+            <img src="Picsart_23-12-11_20-00-35-407 (1).png" / >
+          </div>
+          <div class="col2">
+            <h1 class="subtitile">About</h1>
+            <p>I am currently a B-TECH student in RV UNIVERSITY !</p>
+            <div class="tab-titles">
+              <p class="tab-links active" onclick="opentab('skills')">skills</p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active_tab" id="skills">
+              <ul>
+                <li>
+                  <span>WEB DEV</span><br />Developing web using
+                  HTML/CSS/JS/REACT
+                </li>
+                <li><span>APP DEV</span><br />building app using PYTHON</li>
+                <li>
+                  <span>DATA STUCTURE</span><br />Analyse data and use them
+                  through C DSA
+                </li>
+                <li>
+                  <span>ELECTRONIC</span><br />knowledge about Hardware(Digital
+                  Sysytem and computer Architecture)
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>2023-2027(current)</span><br />B-tech CS in RV
+                  UNIVERSITY
+                </li>
+                <li>
+                  <span>2021-2023</span><br />PCMB in SAV in BDVT<br />
+                  92.3%
+                </li>
+                <li><span>2020</span><br />SSLC in SVVS in BDVT<br />90%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------Services--------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="sevices-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Data analysis</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--certificates-->
+    <div id="certificates" class="slider">
+      <div class="slides">
+        <h1 class="subtitle">My certificates :</h1>
+        <img class="slide" src="c.png">
+        <img class="slide" src="FRONT END.png">
+        <img class="slide" src="css.png">
+        <img class="slide" src="Screenshot 2024-01-26 191648.png">
+         <img class="slide" src="JAVASCRIPT.jpg">
+      </div>
+      <button class="prev" onclick="prevslide()"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="forw" onclick="forwslide()"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+    <!-- ----------contact------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact_left">
+            <h1 class="subtitl">Contact Me :</h1>
+            <p><i class="fa-solid fa-envelope"></i>yashavanthap.btech23@rvu.edu.in</p>
+            <p><i class="fa-solid fa-phone"></i>7892555784</p>
+            <br><br>
+            <div class="social">
+              <a href="https://www.instagram.com/rogue_rockyy._/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://twitter.com/Yashavanth67374"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/yashavantha-p-a66607296/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <br><br>
+            <a href="DocumentCV.pdf" download class="cv cv2">Dowload CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" onkeyup="validateemail()" required>
+              <span id="emailError"></span>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+              <button type="submit" class="cv cv2"><i class="fa-solid fa-paper-plane"></i> Send</button>
+            </form>
+            <br>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="copy">
+        <p>Copyright © Yashavantha.P. Made with Easy Tutorials  <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </div>
+    <script src="java.js"></script>
+  </body>
+</html>

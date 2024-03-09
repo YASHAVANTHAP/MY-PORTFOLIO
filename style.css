@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+}
+html,
+body {
+  color: #fff;
+  scroll-behavior: smooth;
+  background-color: black;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("my_portpolio_bg.jpg");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+nav > .lefr > h1 > span {
+  color: aqua;
+  font-size: 58px;
+}
+.lefr {
+  font-size: 25px;
+  position: relative;
+  left: 5px;
+  top: -15px;
+}
+nav {
+  padding: 2vw 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#ledt {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+#ledt h4 {
+  padding: 10px 20px;
+  border: 1px solid #cec5c5;
+  position: relative;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  transition: all ease 0.3s;
+  overflow: hidden;
+}
+#ledt h4 a {
+  text-decoration: none;
+  color: #ddd9d9;
+  position: relative;
+  z-index: 9;
+}
+#ledt h4::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(91, 190, 209);
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.4s;
+}
+#ledt h4:hover::after {
+  bottom: 0;
+  border-radius: 10px;
+}
+#ledt h4:hover a {
+  color: black;
+}
+#ledt h4:hover {
+  border: 10px solid #000;
+}
+nav .fa-solid {
+  display: none;
+  color: aqua;
+}
+.header_text {
+  margin-top: 15%;
+  margin-left: 5%;
+  font-size: 30px;
+}
+.header_text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+.header_text h1 span {
+  color: aqua;
+}
+/* ------------------- about -------------- */
+#about {
+  padding: 80px 0;
+  color: #ababab;
+  position: relative;
+  top: 50px;
+}
+.col1 {
+  position: relative;
+  height: 413px;
+  top: 50px;
+  width: 504px;
+  background-color: #1b1b1b;
+  border-radius: 40%;
+  left: 57px;
+  transition: all ease 0.4s;
+}
+.col1 img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: all ease 0.4s;
+  object-fit: cover;
+}
+.col1:hover {
+  rotate: 20deg;
+}
+.col1:hover img {
+  rotate: -20deg;
+  scale: 0.9;
+  filter: drop-shadow(0 0 50px rgb(71, 7, 700));
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.col2 {
+  flex-basis: 60%;
+  position: relative;
+  left: 30vh;
+}
+.subtitile {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  bottom: 27px;
+}
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: aqua;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: all ease 0.5s;
+}
+.tab-links.active::after {
+  width: 50%;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents ul li span {
+  color: aqua;
+  font-size: 14px;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active_tab {
+  display: block;
+}
+/*----------------services--------------*/
+#services {
+  margin: 109px 50px;
+  padding: 30px 0px;
+  text-align: start;
+}
+.sub-title {
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+}
+.sevices-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.sevices-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 6px;
+  transition: all 0.6s ease-in-out;
+}
+.sevices-list div i {
+  font-size: 50px;
+}
+.sevices-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.sevices-list div:hover {
+  background-color: aqua;
+  box-shadow: 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua;
+  color: black;
+  transform: translateY(-10px);
+}
+/*------------certificates-----------------*/
+.subtitle {
+  position: relative;
+  left: -295px;
+  color: #fff;
+  top: -100px;
+  font-size: 40px;
+  font-weight: 400;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.slider img {
+  width: 100%;
+  display: none;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.slides {
+  position: relative;
+  margin: 100px 347px;
+}
+img.displaySlide {
+  display: block;
+  animation: fade 1.5s;
+}
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 5rem;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.prev {
+  left: 15%;
+}
+.forw {
+  right: 15%;
+}
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.slider button:hover {
+  color: aqua;
+  text-shadow: 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua;
+}
+/* --------------------contact---------------*/
+#contact {
+  position: relative;
+  top: 100px;
+  padding: 0 51px;
+}
+.contact_left {
+  flex-basis: 35%;
+  width: 100%;
+}
+.contact-right {
+  flex-basis: 60%;
+}
+.contact_left p {
+  margin-top: 30px;
+  position: relative;
+  top: -70px;
+}
+.contact_left p i {
+  color: aqua;
+  margin-right: 15px;
+  font-size: 25px;
+}
+.social {
+  margin-top: 30px;
+}
+.social a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 50px;
+  color: aqua;
+  display: inline-block;
+}
+.social a :hover {
+  text-shadow: 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua;
+  transform: translateY(-10px);
+  transition: all 0.6s;
+}
+.cv.cv2 {
+  display: inline-block;
+  background-color: aqua;
+  font-weight: 300;
+  text-decoration: none;
+  border-color: aqua;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: all 0.6s;
+}
+.cv2:hover {
+  box-shadow: 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua;
+  transform: translateY(-2px);
+}
+.subtitl {
+  position: relative;
+  color: #fff;
+  top: -100px;
+  font-size: 40px;
+  font-weight: 400;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+form .cv2 {
+  padding: 14px 60px;
+}
+.copy {
+  width: 41cm;
+  text-align: center;
+  padding: 25px 0;
+  margin: 0 -100px;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.copy i {
+  color: aqua;
+}
+/* --------------------Responsive---------------*/
+
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url(small_screen.jpg);
+  }
+  .header_text {
+    margin-top: 100%;
+    font-size: 16px;
+  }
+  .header_text h1 {
+    font-size: 30px;
+  }
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+  #ledt {
+    background-color: aqua;
+    position: fixed;
+    top: 0px;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  #ledt {
+    display: block;
+    top: 0px;
+  }
+  #ledt h4 {
+    border: none;
+    border-radius: 0;
+    margin-top: 30px;
+    color: #000;
+  }
+  #ledt h4 a {
+    color: #000;
+    font-weight: 400;
+    font-size: 25px;
+    z-index: 999;
+  }
+  #ledt i {
+    position: absolute;
+    color: #000;
+    top: 30px;
+    left: 19px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 25px;
+  }
+  .subtitile,
+  .subtitl {
+    font-size: 40px;
+  }
+  .col1,
+  .col2 {
+    flex-basis: 100%;
+  }
+  .col1 {
+    margin-left: -59px;
+    scale: 0.7;
+  }
+  .col2 {
+    margin-left: -190px;
+    margin-top: 50px;
+  }
+  .slider button {
+    font-size: 20px;
+  }
+  .tab-links {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .subtitle {
+    font-size: 30px;
+    text-align: center;
+    top: -3px;
+    left: 3px;
+  }
+  .slides {
+    margin: 0;
+  }
+  .subtitl {
+    margin-top: 110px;
+    font-size: 30px;
+  }
+  .contact_left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+  .copy {
+    width: 15cm;
+  }
+}
+#msg {
+  color: aqua;
+  display: block;
+}
