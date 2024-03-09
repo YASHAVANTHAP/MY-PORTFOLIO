@@ -438,7 +438,8 @@ form .cv2 {
     scale: 0.7;
   }
   .col2 {
-    margin-left: -190px;
+    flex-wrap: wrap;
+    margin-left: -210px;
     margin-top: 50px;
   }
   .slider button {
@@ -466,7 +467,10 @@ form .cv2 {
     flex-basis: 100%;
   }
   .copy {
-    width: 15cm;
+    width: 11cm;
+  }
+  .copy p {
+    font-size: 10px;
   }
 }
 #msg {
